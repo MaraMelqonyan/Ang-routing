@@ -1,0 +1,13 @@
+<div *ngIf="person" class="card text-black bg-warning m-3" style="max-width: 18rem;">
+  <div class="card-header">{{person.name}}</div>
+  <div class="card-body">
+    <h5>{{person.username}}</h5>
+    <p class="card-text">{{person.email}}</p>
+    <p class="card-text">{{person.address.city}}</p>
+    <p class="card-text">{{person.company.name}}</p>
+  </div>
+</div>
+
+
+<button routerLink="/posts" routerLinkActive="active" type="button" class="btn btn-outline-warning">UserPosts</button>
+<button routerLink="/albums" routerLinkActive="active" type="button" class="btn btn-outline-warning ml-2">UserAlbums</button>

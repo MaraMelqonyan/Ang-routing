@@ -1,0 +1,8 @@
+<div class="row">
+  <div *ngFor="let album of albumsData" class=" card border-warning m-5" style="max-width: 20rem;">
+    <div class="card-header"> {{album.title}}</div>
+    <div class="card-body text-warning">
+      <a [routerLink]="['/albums', album.id]" class="btn btn-warning">Show Photos</a>
+    </div>
+  </div>
+  </div>

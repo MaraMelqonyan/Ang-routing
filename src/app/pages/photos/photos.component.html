@@ -1,0 +1,17 @@
+<!-- <div class="row">
+  <div class="col-3" *ngFor="let photo of albumephoto">
+    <h4>{{photo.title}}</h4>
+    <img [src]="photo.thumbnailUrl" alt="">
+  </div>
+</div>
+ -->
+
+
+<div class="row">
+<div *ngFor="let photo of albumephoto" class="card col-3 mt-2" style="width: 15rem;">
+  <img class="card-img-top" [src]="photo.thumbnailUrl" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">{{photo.title}}</p>
+  </div>
+</div>
+</div>
